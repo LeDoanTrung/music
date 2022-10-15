@@ -215,14 +215,15 @@ header .navbar{
     background-color: lightblue;
     }
     #sidebar .left p:nth-child(2){
+        margin-top: 35px;
         color: #ff7979;
-        font-size: 20px;
+        font-size: 15px;
         font-weight: bolder;
     }
     #sidebar .left p:nth-child(3){
         color: #fff;
         font-weight: bolder;
-        font-size: 15px;
+        font-size: 13px;
     }
     #sidebar .left{
         width: 80%;
@@ -233,6 +234,10 @@ header .navbar{
     }
     #shut{
     display: block;
+    }
+    .outer {
+        transform: translateX(-100%);
+        display: none;
     }
 }
 
