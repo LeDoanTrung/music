@@ -16,7 +16,7 @@ footer{
 
 
 .footer{
-    background: url(imgs/bg.jpg);
+    background: url(../imgs/bg.jpg);
     background-position: center;
     background-size: cover;
     color: #fff;

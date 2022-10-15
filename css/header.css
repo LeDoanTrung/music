@@ -214,9 +214,19 @@ header .navbar{
  body {
     background-color: lightblue;
     }
-
+    #sidebar .left p:nth-child(2){
+        color: #ff7979;
+        font-size: 15px;
+        font-weight: bolder;
+    }
+    #sidebar .left p:nth-child(3){
+        color: #fff;
+        font-weight: bolder;
+        font-size: 10px;
+    }
     #sidebar .left{
         width: 100%;
+
     }
     #sidebar .right{
         display: none;
