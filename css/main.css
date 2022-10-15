@@ -160,7 +160,7 @@ main #Singer .carousel-inner .carousel-item{
 
 
 main #Singer .carousel-inner .carousel-item img{
-    height: 464px;
-    width: 1010px;
+    height:100%;
+    width: 100%;
 }
 
