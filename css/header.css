@@ -210,22 +210,22 @@ header .navbar{
     
 }
 
-@media  screen and (max-width: 600px) {
+@media  screen and (max-width: 420px) {
  body {
     background-color: lightblue;
     }
     #sidebar .left p:nth-child(2){
         color: #ff7979;
-        font-size: 15px;
+        font-size: 20px;
         font-weight: bolder;
     }
     #sidebar .left p:nth-child(3){
         color: #fff;
         font-weight: bolder;
-        font-size: 10px;
+        font-size: 15px;
     }
     #sidebar .left{
-        width: 100%;
+        width: 80%;
 
     }
     #sidebar .right{
