@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #above1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #below1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #above .left  button{
+            background: green;
+            border: none;
+            border-radius: 5px;
+            padding: 5px;
+            color: aliceblue;
+        }
+
+        #above .right button{
+            top: 0;
+            right: 0;
+        }
+
+
+        #below .left button{
+            background: green;
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+            color: aliceblue;
+        }
+
+        #above1 .left{
+            display: flex;
+            padding: 30px;
+            flex-direction: column;
+            margin:20px 20px;
+            background: blue;
+            border-radius: 5px;
+        }
+        #above1 .left input{
+            margin: 10px;
+        }
+
+        #above1 .right {
+            padding: 40px ;
+            color: white;
+            margin:20px 20px;
+            background: blue;
+            border-radius: 5px;
+            position: relative;
+        }
+
+        #below1 .left{
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            margin:20px 20px;
+            background: blue;
+            border-radius: 5px;
+            
+        }
+
+        #below1 .right{
+            padding: 50px ;
+            color: white;
+            margin:20px 20px;
+            background: blue;
+            border-radius: 5px;
+            position: relative;
+        }
+        #below1 .left input{
+            margin: 10px;
+        }
+
+        #above1 .right .shut1{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        #below1 .right .shut2{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <section id="above">
+        <div id="above1">
+            <div class="left">
+                <input class="chieudai" type="text" placeholder="Nhập chiều dài">
+                <input class="chieurong" type="text" placeholder="Nhập chiều rộng">
+                <button class="dientich">Tính diện tích</button>
+            </div>
+            
+            <div class="right">
+                <button class="shut1">X</button>
+                <p class="ketqua">Diện tích = </p>
+            </div>
+        </div>
+        
+    </section>
+    <br><br><br><br><br>
+    <section id="below">
+        <div id="below1">
+            <div class="left">
+                <input class="en" type="text" placeholder="Nhập n">
+                <button class="tinhtong">Tính tổng các số tự nhiên bé hơn n</button>
+            </div>
+            <div class="right">
+                <button class="shut2">X</button>
+                <p class="Tong">Tổng = </p>
+            </div>
+        </div>
+        
+    </section>
+</body>
+
+<script>
+
+        let chieudai=document.querySelector(".chieudai");
+        let chieurong=document.querySelector(".chieurong");
+        let ketqua= document.querySelector("#above .ketqua");
+        let dientich=document.querySelector(".dientich");
+
+        dientich.addEventListener('click',()=>{
+                ketqua.innerHTML= "Diện tích = "+chieudai.value*chieurong.value;
+        })
+
+
+        
+        let tinhtong = document.querySelector(".tinhtong");
+        let tong = document.querySelector("#below .Tong");
+        tinhtong.addEventListener('click',()=>{
+        let n =document.querySelector(".en").value;
+        let array = [];
+        
+        
+        let tong1=0;
+            for (let index = 0; index < n; index++) {
+                tong1+=index;
+        }
+            tong.innerHTML="Tổng = " + tong1;
+        })
+        
+        let shut1 = document.querySelector(".shut1");
+        let shut2 = document.querySelector(".shut2");
+
+        shut1.addEventListener('click',()=>{
+                ketqua.innerHTML = "Diện tích = ";
+        })
+
+        
+        shut2.addEventListener('click',()=>{
+                tong.innerHTML="Tổng = ";
+        })
+</script>
+</html>
