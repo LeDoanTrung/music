@@ -12,6 +12,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -39,7 +40,7 @@
                     <a class="nav-link" href="#Singer">SINGERS</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#product">CONTACT</a>
+                    <a class="nav-link" href="#contact">CONTACT</a>
                   </li>    
                 </ul>
                 <button class=" btn-buy" data-bs-toggle="modal" data-bs-target="#myModal" data-bs-toggle="tooltip" title="Chần chờ chi!">Buy ticket</button>
@@ -47,10 +48,14 @@
               <section id="sidebar">
             
                 <div class="left">
-                    <button id="shut">X</button>
+                    <button id="shut"><i class="fa fa-window-close-o" aria-hidden="true"></i></button>
+                    <p>Phiêu Concert: Đêm Nhạc Quy Tụ Loạt Sao Vpop Khiến Giới Trẻ Sài Gòn “Bấn Loạn”.</p>
+                      <p>
+                      Nếu mùa mưa năm nay, ngay tại Sài Gòn này, bạn vẫn chưa có một cái hẹn tháng 10 nào thật đặc sắc cho một năm học, làm việc mới thì cũng đừng quá lo lắng nhé. Một chương trình mang tên Phiêu Concert cực hot đang đổ bộ khắp Sài Gòn và làm các bạn trẻ “rạo rực” trong những ngày vừa qua sắp sửa bùng nổ rồi đây. Một chương trình với quy mô được đẩy mạnh về cả âm thanh và hình ảnh, Phiêu Concert dù chỉ được “nhá hàng” trong 2 tuần vừa qua nhưng đã khiến giới trẻ ngạc nhiên vì độ “chịu chơi” cùng dàn khách mời cực khủng. Fanpage đã đạt hơn 1000 lượt theo dõi trong 3 ngày đầu tiên cùng với hàng loạt lượt tương tác tạo nên một cơn sốt khắp mạng xã hội khi dàn nghệ sĩ sẽ góp mặt trong chương trình được công bố. Thậm chí dưới phần bình luận của fanpage, nhiều khán giả đã không thể giấu đi sự hào hứng với chương trình và khoe rằng “đã sẵn sàng xúng xính váy áo” để quẫy một đêm hết mình cùng Phiêu! Còn bạn thì sao? Đã sẵn sàng tick ngay vào lịch tháng 10 này một cái hẹn thật hoành tráng với Phiêu Concert chưa nào?
+                      </p>
                 </div>
                 <div class="right">
-                    right
+                    
                 </div>
             </section>
 <!-- The Modal -->
@@ -102,14 +107,10 @@
 
 
           <section id="time" data-aos="fade-down"
-          data-aos-easing="linear"
-          data-aos-duration="1500">
+                             data-aos-easing="linear"
+                             data-aos-duration="1500">
             <div class="box">
-              <!-- <p id="days"></p>
-              <p id="hours"></p>
-              <p id="mins"></p>
-              <p id="secs"></p>
-              <h2 id="end"></h2> -->
+              
                 <p id="days"></p>
                 <p>Days</p>
             </div>
@@ -307,13 +308,40 @@
     </main>
     
     <footer>
-      <section>
-         <div>
-
-         </div>
-         <div>
-
-         </div>
+      <section id="contact">
+        <div class="footer">
+          <div class="row">
+            <div class="col-sm-4 box" data-aos="zoom-out-down">
+              <img src="img/logo.png" width="100%">
+            </div>
+             <div class="col-sm-4 box" data-aos="flip-left"
+             data-aos-easing="ease-out-cubic"
+             data-aos-duration="2000">
+              <h1 class="title mb-3">PHIÊU CONCERT</h1>
+              <p class="time">05 OCTOBER, 2019</p>
+              <address class="address">Sala City, 10 Mai Chi Tho, Thu Thiem New Urban Area, District 2, HCMC</address>
+            </div>
+            <div class="col-sm-4 box" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+                 <h1 class="title mb-3"> SOCIAL CONNECTION</h1>
+                 <p class="address">You should connect social area</p>
+                 <p class="address">for Any update</p>
+                 <div class="icon">
+                  <a href="https://www.facebook.com/phieuconcert/"> <i class="fa fa-facebook"></i></a>
+                  <a href="https://www.instagram.com/phieuconcert.official/"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+   
+          </div>
+          <br>
+          <br>
+          <hr>
+          <div class="thank" data-aos="zoom-out-right">
+            © GREEN ACADEMY - TEACHER: TAN NGUYEN - LE DOAN TRUNG
+          </div>
+        </div>
+       
       </section>
     </footer>
 
@@ -327,7 +355,7 @@
 
         let bot=document.querySelector(".outer .inner");
         bot.addEventListener('click',()=>{
-          window.scrollTo(0,2100);
+          window.scrollTo(0,4100);
         })
 
 
@@ -364,8 +392,8 @@ if (timeleft < 0) {
 }, 1000);
 
 
-
-let toggle = document.querySelector("#toggle");
+        let time = document.querySelector("#time");
+        let toggle = document.querySelector("#toggle");
         let sidebar = document.querySelector("#sidebar");
         let left=document.querySelector(".left");
         let right = document.querySelector(".right");
@@ -374,17 +402,20 @@ let toggle = document.querySelector("#toggle");
             sidebar.classList.add("active");
             left.style.transform="translateX(0%)";
             right.style.transform="translateX(0%)";
+            time.style.display="none"
         })
 
         right.addEventListener('click',()=>{
             sidebar.classList.remove("active");
             left.style.transform="translateX(-100%)";
             right.style.transform="translateX(100%)";
+            time.style.display="flex"
         })
         shut.addEventListener('click',()=>{
             sidebar.classList.remove("active");
             left.style.transform="translateX(-100%)";
             right.style.transform="translateX(100%)";
+            time.style.display="flex"
         })
 
     </script>

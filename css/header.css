@@ -126,6 +126,7 @@ header .navbar{
 .outer {
     background-color: pink;
     width: 300px;
+    color: #fff !important;
     position: relative;
     display: inline-block;
     margin: 100px 20px;
@@ -136,11 +137,10 @@ header .navbar{
   
   .inner {
     font-size: 9px;
-    color: #878787;
+    color: white !important;
     position: absolute;
     top: 30%;
     left: 42%;
-    
     border: none;
   }
   
@@ -154,7 +154,7 @@ header .navbar{
     border: none;
     padding: 10px 10px;
     border-radius: 20px;
-    background: #7ed6df;
+    background: white;
     font-weight: 600;
 
   }
@@ -169,17 +169,31 @@ header .navbar{
 }
 
 #sidebar .left{
+    display: block;
+    padding: 30px;
     top: 0;
     width: 30%;
-    background: #0984e3;
+    background: transparent;
+   border-radius: 20px;
     transition: 1s;
     transform: translateX(-100%);
+   position: absolute;
 }
 
+#sidebar .left p:nth-child(2){
+    color: #ff7979;
+    font-size: 20px;
+    font-weight: bolder;
+}
+#sidebar .left p:nth-child(3){
+    color: #fff;
+    font-weight: bolder;
+    font-size: 15px;
+}
 #sidebar .right{
     top: 0;
     width: 70%;
-    background: #74b9ff;
+    background: transparent;
     transition: 1s;
     transform: translateX(100%);
 }
@@ -190,8 +204,10 @@ header .navbar{
 }
 #shut{
     right: 0;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     display: none;
+    
 }
 
 @media  screen and (max-width: 600px) {
