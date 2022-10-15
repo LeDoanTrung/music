@@ -16,7 +16,7 @@ footer{
 
 
 .footer{
-    background: url(/img/bg.jpg);
+    background: url(../imgs/bg.jpg);
     background-position: center;
     background-size: cover;
     color: #fff;
@@ -84,34 +84,4 @@ footer{
     text-align: center;
 }
 
-@media screen and (max-width: 800px) {
-    header #time .box p:nth-child(1){
-        font-size: 70px;
-    }
-    header #time{
-        padding:40px;
-    }
-  }
-@media screen and (max-width: 600px) {
-    header #time .box p:nth-child(1){
-        font-size: 60px;
-    }
-    header #time{
-        padding:30px;
-    }
-    header #time .box{
-        line-height: 20px;
-    }
-  }
 
-  @media screen and (max-width: 420px) {
-    header #time .box p:nth-child(1){
-        font-size: 30px;
-    }
-    header #time{
-        padding:35px;
-    }
-    header #time .box{
-        line-height: 10px;
-    }
-  }
