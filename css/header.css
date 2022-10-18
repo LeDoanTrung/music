@@ -124,19 +124,20 @@ header .navbar{
     } */
 }
 .outer {
+    position: absolute;
     background-color: pink;
-    width: 300px;
+    width: 200px;
     color: #fff !important;
     position: relative;
     display: inline-block;
-    margin: 100px 20px;
-    top: 50%;
-    left: 83%;
+    /* margin: 100px 20px; */
+    top: 70%;
+    left:85%;
     border: none;
   }
   
   .inner {
-    font-size: 9px;
+    font-size: 15px;
     color: white !important;
     position: absolute;
     top: 30%;
