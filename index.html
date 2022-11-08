@@ -48,8 +48,26 @@ canvas {
     display: flex;
     justify-content: center;
     position: relative;
-    top: 700px;
+    top: 56rem;
+    padding-left: 50px;
+    /* top: 700px; */
+    animation:span 1s linear infinite;
+    transition: 3.5s;
+    
 }
+
+@keyframes span {
+            /* 0%{
+              opacity: 1;
+            } */
+            50%{
+                transform: scale(120%);
+            }
+            100%{
+                transform: scale(100%);
+            }
+        }
+       
   </style>
 
  </HEAD>
